@@ -98,7 +98,6 @@ public class guess extends JPanel implements ActionListener{
 		n = r.nextInt(13);
 		s2 = pics.get(n);
 		s3 = s2.substring(0, s2.length() - 4);
-		//System.out.println("Psst...the answer is " + s3); //this was just for testing purposes
 		picture = new JLabel(new ImageIcon("temp.png")); //a black image will hide the character from the user at first
 		picture.setHorizontalAlignment(JLabel.CENTER);
 		
@@ -116,7 +115,7 @@ public class guess extends JPanel implements ActionListener{
 		textPanel = new JPanel();
 		grid = new FlowLayout();
 		
-		grid.setHgap(60); //my attempt at spacing all of the panels/components out
+		grid.setHgap(60); //spacing all of the panels/components out
         grid.setVgap(8);
         grid.setAlignment(FlowLayout.CENTER);
 		
